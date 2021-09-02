@@ -1,15 +1,15 @@
 let dataDiv = document.getElementById("dataDiv");
-        let errorGif = document.getElementById('error-msg');
+let errorGif = document.getElementById('error-msg');
 
 
         
-
+    //Fetching the data from the app 
         async function movieData() {
             try {
                 let movieName = document.querySelector('.movie-name').value;
                 let response = await fetch(`http://www.omdbapi.com/?s=${movieName}&i&apikey=4ec9d444`);
                 let result = await response.json();
-                console.log('result:', result)
+                // console.log('result:', result)
                 let movieResults = result.Search;
                 display(movieResults)
 
