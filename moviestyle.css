@@ -1,0 +1,192 @@
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: aliceblue;
+    font-family: 'Patrick Hand', cursive;
+
+}
+section {
+    position: absolute; 
+    /* bottom: 30%; */
+    left: 20%;
+    transform: translate(-30%, 20%);
+}
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+input:nth-child(1) {
+    width: 20rem;
+    padding: 0.5rem 0;
+}
+input:nth-child(2), 
+button,
+.year {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+img {
+    width: 50%;
+}
+#dataDiv {
+    /* width: auto; */
+    margin-top: 1rem;
+    position: absolute;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4,80%);
+}
+.child-node {
+    width: 80%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+.child-node:hover {
+    box-shadow: 0 1px 5px 1px;
+
+}
+#error-msg {
+    display: none;
+    margin-top: 1rem;
+    position: relative;
+    top: 20rem;;
+    left: 18rem;
+    width: 20rem;
+    /* transform: translate(-30%, 20%); */
+}
+button {
+    /* background-color: #0F5897; */
+    font-size: 1rem;
+    cursor: pointer
+
+}
+button:hover {
+    animation-name: button;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes button {
+    100% {
+        background: #0F5897;
+        color: #fff;
+    }
+    
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    section {
+        position: absolute; 
+        /* bottom: 30%; */
+        left: 30%;
+        transform: translate(-30%, 20%);
+    }
+    #dataDiv {
+        /* width: auto; */
+        margin-top: 1rem;
+        position: absolute;
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        /* grid-template-columns: repeat(4,80%); */
+    }
+    h1 {
+        color: white;
+        font-size: 2rem;
+    }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h1 {
+        color: white;
+        font-size: 2.5rem;
+    }
+    #dataDiv {
+        /* width: auto; */
+        margin-top: 1rem;
+        position: absolute;
+        display: grid;
+        grid-gap: 2px;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(4,40%);
+    }
+    input{
+        width: 18rem;
+        /* height: 0.9rem; */
+        padding: 0.8rem 0;
+    }
+    input:nth-child(2), 
+    button,
+    .year {
+        /* width: rem; */
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        
+    }
+    img {
+        width: 65%;
+    }
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 4rem;
+    }
+    input {
+        width: 100%;
+        height: 26px;
+        margin-bottom: 10px;;
+    }
+    button {
+        width: 30%;
+        height: 45px;
+    }
+    #dataDiv {
+        /* width: auto; */
+        margin-top: 1rem;
+        position: absolute;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: repeat(4,50%);
+    }
+    img {
+        width: 70%;
+    }
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    input {
+        width: 60%;
+        height: 26px;
+        margin-bottom: 10px;;
+    }
+    button {
+        width: 30%;
+        height: 45px;
+    }
+    #dataDiv {
+        width: 800px;
+        margin: auto;
+        margin-top: 1rem;
+        position: absolute;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: repeat(4,50%);
+    }
+
+}
