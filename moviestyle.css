@@ -133,14 +133,15 @@ button:hover {
 
 } 
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) iPad and iPad Pro 
+but not suitable  use the below one i.e., 992px */
 @media only screen and (min-width: 768px) {
     
     
 
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops/iPad Pro, 992px and up)  */
 @media only screen and (min-width: 992px) {
     h1 {
         font-size: 4rem;
@@ -188,5 +189,6 @@ button:hover {
         grid-gap: 2px;
         grid-template-columns: repeat(4,50%);
     }
+   
 
 }
